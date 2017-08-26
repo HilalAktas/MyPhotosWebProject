@@ -1,0 +1,4 @@
+C:\staj\MyPhotosSolutions\MyPhotos.Common\bin\Debug\MyPhotos.Common.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Common\bin\Debug\MyPhotos.Common.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.Common\obj\Debug\MyPhotos.Common.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Common\obj\Debug\MyPhotos.Common.pdb

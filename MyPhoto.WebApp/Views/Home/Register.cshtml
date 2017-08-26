@@ -1,0 +1,105 @@
+﻿@using MyPhotos.Entities;
+@using MyPhotos.Language;
+@model  RegisterView
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-3">
+
+            @if (TempData["LastError"] != null)
+
+            { <div class="col-md-12">
+                @Html.Partial("_ErrorPartialView")
+            </div>
+
+            }
+
+            
+            <div class="form-login">
+                <h1>@Resource.Hoşgeldin</h1>
+
+
+
+
+                @using (Html.BeginForm())
+                {
+                 
+                    @Html.ValidationSummary(true)
+                    <br />
+                 
+                    <div class="input-group">
+                       
+                        @Html.TextBoxFor(Model => Model.Ad, new { @class = "form-control", placeholder = Resource.Adınız })
+
+                    </div>
+                    <br />
+
+                        <div class="input-group">
+                           
+                            @Html.TextBoxFor(Model => Model.SoyAd, new { @class = "form-control", placeholder =Resource.Soyadınız })
+                        </div>
+                        <br />
+
+                      <div class="input-group">
+                       
+                        @Html.TextBoxFor(Model => Model.KullaniciAdi, new { @class = "form-control", placeholder =Resource.KullanıcıAdınız })
+
+                    </div>
+                        <br />
+
+                        <div class="input-group">
+                          
+                            @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control", placeholder =Resource.Eposta })
+                        </div>
+
+                        <br />
+
+                        <div class="input-group">
+
+                            
+
+                            @Html.TextBoxFor(Model => Model.Sifre, new { @class = "form-control", placeholder = Resource.Şifre, type = "password" })
+                        </div>
+                        <br />
+                        <div class="input-group">
+
+                         
+                            @Html.TextBoxFor(Model => Model.TekrarSifre, new { @class = "form-control", placeholder = Resource.ŞifreTekrar, type = "password" })
+                        </div>
+                        <br />
+
+                        <div class="input-group col-md-9">
+
+                            @Html.TextBoxFor(Model => Model.DogumTarihi, new { @class = "form-control", placeholder = Resource.DoğumTarihiKontrol, type = "date" })
+                        </div>
+                        <br />
+                        <br>
+
+                        <div class="wrapper">
+                            <span class="group-btn">
+                                <button type="submit" class="btn btn-primary btn-md">@MyPhotos.Language.Resource.Kayıt <i class="fa fa-sign-in"></i></button>
+                            </span>
+                </div>
+
+                }
+    </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+
+        $("footer").hide()
+    });
+
+</script>

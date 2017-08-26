@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhoto.WebApp", "MyPhoto.WebApp\MyPhoto.WebApp.csproj", "{C2C9F178-CC96-4981-A92B-39AC908A8C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos.BusinessLayer", "MyPhotos.BusinessLayer\MyPhotos.BusinessLayer.csproj", "{62C08597-BF6E-4E95-A90C-571E6F41E7BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos.DataAccessLayer", "MyPhotos.DataAccessLayer\MyPhotos.DataAccessLayer.csproj", "{A44271E4-36C8-44BF-8C82-151BD73D9F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos.Entities", "MyPhotos.Entities\MyPhotos.Entities.csproj", "{EC27AD1E-697E-4ABA-A8AA-F322CE475D38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos.Common", "MyPhotos.Common\MyPhotos.Common.csproj", "{23B5AD25-70A0-4133-9859-19DF6D3863FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos.Core", "MyPhotosCore\MyPhotos.Core.csproj", "{7015BF5D-081F-44E2-BE09-F3810F47D1FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos.Language", "MyPhotos.Language\MyPhotos.Language.csproj", "{3F3838B8-E67B-4B42-A329-A19A9CA1B48E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2C9F178-CC96-4981-A92B-39AC908A8C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C9F178-CC96-4981-A92B-39AC908A8C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C9F178-CC96-4981-A92B-39AC908A8C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C9F178-CC96-4981-A92B-39AC908A8C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C08597-BF6E-4E95-A90C-571E6F41E7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C08597-BF6E-4E95-A90C-571E6F41E7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C08597-BF6E-4E95-A90C-571E6F41E7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C08597-BF6E-4E95-A90C-571E6F41E7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44271E4-36C8-44BF-8C82-151BD73D9F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44271E4-36C8-44BF-8C82-151BD73D9F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44271E4-36C8-44BF-8C82-151BD73D9F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44271E4-36C8-44BF-8C82-151BD73D9F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC27AD1E-697E-4ABA-A8AA-F322CE475D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC27AD1E-697E-4ABA-A8AA-F322CE475D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC27AD1E-697E-4ABA-A8AA-F322CE475D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC27AD1E-697E-4ABA-A8AA-F322CE475D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23B5AD25-70A0-4133-9859-19DF6D3863FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B5AD25-70A0-4133-9859-19DF6D3863FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B5AD25-70A0-4133-9859-19DF6D3863FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B5AD25-70A0-4133-9859-19DF6D3863FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7015BF5D-081F-44E2-BE09-F3810F47D1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7015BF5D-081F-44E2-BE09-F3810F47D1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7015BF5D-081F-44E2-BE09-F3810F47D1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7015BF5D-081F-44E2-BE09-F3810F47D1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3838B8-E67B-4B42-A329-A19A9CA1B48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3838B8-E67B-4B42-A329-A19A9CA1B48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3838B8-E67B-4B42-A329-A19A9CA1B48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3838B8-E67B-4B42-A329-A19A9CA1B48E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

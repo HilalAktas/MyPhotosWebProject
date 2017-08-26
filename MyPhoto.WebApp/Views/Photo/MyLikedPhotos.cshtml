@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MyPhotos.Entities.Photo>
+@{
+    ViewBag.Title = "MyLikedPhotos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.Label("Kategori Adı")
+
+                </th>
+                <th>
+                    @Html.Label("Fotoğraf Adı")
+                </th>
+
+                <th>
+                    @Html.Label("Beğenilme Sayısı")
+                </th>
+
+                <th>
+                    @Html.Label("Fotoğraf")
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LikeCount)
+                    </td>
+                    <td>
+                        <div class="thumbnail"><img src="@item.PhotoPath" />   </div>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+    </div>

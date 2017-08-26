@@ -1,0 +1,72 @@
+﻿@using MyPhotos.Entities;
+@using MyPhotos.Language;
+@model  LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-3">
+
+            
+            <div class="form-login">
+                <h1>@Resource.Hoşgeldin</h1>
+                <br />
+               
+        
+             @if (TempData["LastError"] != null)
+
+             { <div class="col-md-12">
+                    @Html.Partial("_ErrorPartialView")
+                </div>
+
+             }
+
+
+                @{Html.EnableClientValidation();}
+                @{Html.EnableUnobtrusiveJavaScript();}
+                @using (Html.BeginForm())
+                {
+
+                    @Html.ValidationSummary(true)
+                    <br />
+
+                    if (ViewBag.Link != null)
+                    {
+                        <a href="@ViewBag.Link" class="btn btn-info">Aktifleştirme Butonu</a>                      
+                    }
+
+                    <br /><br />
+                    @Html.TextBoxFor(Model => Model.KullaniciAdi, new { @class = "form-control", placeholder =Resource.KullanıcıAdınız})
+
+               
+                    <br />
+                    @Html.TextBoxFor(Model => Model.Sifre, new { @class = "form-control", placeholder = Resource.Şifre, type = Resource.Şifre})
+              
+                    <br />
+                    <div class="wrapper">
+                        <span class="group-btn">
+                            <button type="submit" class="btn btn-danger btn-md">@Resource.GirisYap<i class="fa fa-sign-in"></i></button>
+                        </span>
+                    </div>
+
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+
+        $("footer").hide()
+    });
+
+</script>

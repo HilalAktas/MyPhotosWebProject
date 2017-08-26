@@ -1,0 +1,19 @@
+﻿      
+     .validation-summary-errors {
+                border: 2px dotted #a94442;
+                background-color: #d76663;
+                border-radius: 8px;
+                border-width: medium;
+            }
+
+                .validation-summary-errors ul {
+                    list-style-type: none;
+                    padding: 5px;
+                    color: #fff;
+                }
+    .thumbnail {
+        border: 2px solid;
+        border-radius: 8px;
+        border-color: coral;
+     
+    }

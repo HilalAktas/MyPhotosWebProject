@@ -1,0 +1,94 @@
+﻿,@using MyPhotos.Entities;
+
+@{
+    ViewBag.Title = "CategorysPhoto";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="/Content/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="/Scripts/jquery-3.1.1.min.js"></script>
+<script src="  http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3 col-md-3 col-lg-3">
+            @Html.Partial("_PartialCategories")
+
+        </div>
+     
+        <div class="col-xs-9 col-md-9 col-lg-9">
+
+    @foreach (Photo photo in Model)
+    {
+
+        <div class="col-sm-4 col-lg-4 col-md-4" data-photo-id="@photo.Id">
+            <div class="thumbnail" witdh:400px>
+                <img data-toggle="modal" data-target="#modal_photodetail"  data-photo-id="@photo.Id" src="@photo.PhotoPath" alt="">
+                <div class="caption">
+                    <h6 class="pull-right">
+                        <span class="glyphicon glyphicon-user"></span>@photo.Owner.UserName<br />
+                        <span class="glyphicon glyphicon-time"></span>@photo.ModifiedOn
+                    </h6>
+
+                    <h4>
+                        <a href="#">First Product</a>
+                    </h4>
+
+                    <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                </div>
+                <div class="ratings">
+                    <p class="pull-right">
+                        <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_comment" data-photo-id="@photo.Id">
+                            <span class="glyphicon glyphicon-comment"></span>@MyPhotos.Language.Resource.Yorumlar
+                        </button>
+                    </p>
+                    <p>
+                        <button class="btn btn-default btn-sm" type="button" data-liked="false" data-photo-id="@photo.Id">
+                            <span class="glyphicon glyphicon-heart-empty like-heart"></span>&nbsp;
+                            <span class="like-count">@photo.LikeCount</span>
+                        </button>
+                    </p>
+                </div>
+           
+            </div>
+        </div>
+
+    }
+    </div>
+    </div>
+</div>
+
+@Bootstrap.ModalPopup(id: "modal_comment", title: "Yorumlar")
+@Bootstrap.ModalPopup(id: "modal_photodetail", title: "Fotoğraf")
+
+<script src="~/Scripts/CommentScript.js"></script>
+
+<script src="~/Scripts/LikeScript.js"></script>
+
+
+<script>
+
+
+
+    var photoid = -1;
+    $(function () {
+
+        $('#modal_photodetail').on('show.bs.modal', function (e) {
+
+            var button = $(e.relatedTarget);
+            photoid = button.data("photo-id");
+
+            $('#modal_photodetail').load("/Photo/GetPhotoDetail/" + photoid)
+
+        })
+
+    });
+
+
+
+</script>
+
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />

@@ -1,0 +1,18 @@
+﻿@using MyPhotos.BusinessLayer
+@using MyPhotos.Entities
+@using MyPhotos.DataAccessLayer
+
+@{      CategoryManager cat = new CategoryManager();
+    List<Category> category = cat.Select();
+
+}
+
+
+
+<p class="lead">@MyPhotos.Language.Resource.Kategoriler</p>
+<div class="list-group">
+    @foreach (Category item in category)
+    {
+        <a href="/Home/CategorysPhoto/@item.Id" class="list-group-item">@item.Title</a>
+    }
+</div>

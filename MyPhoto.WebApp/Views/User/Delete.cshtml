@@ -1,0 +1,53 @@
+﻿
+@model MyPhotos.Entities.MyPhotosUser
+
+@{
+    ViewBag.Title = "Delete";
+
+}
+
+
+
+
+<div>
+    <h4>Kullanıcıyı Silmek İstediğinizden Emin Misiniz?</h4>
+    <br />
+
+    <dl class="dl-horizontal">
+   
+        <hr />
+        <dt>
+            Kullanıcı Adı
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            Şifre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+       
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions  col-md-5 ">
+            <input type="submit" value="Sil" class="btn btn-success" /> |
+            @Html.ActionLink("Kullanıcılara Geri Dön", "Index")
+        </div>
+    }
+</div>

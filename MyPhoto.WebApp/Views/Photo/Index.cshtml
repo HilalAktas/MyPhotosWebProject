@@ -1,0 +1,82 @@
+﻿
+@model IEnumerable<MyPhotos.Entities.Photo>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .thumbnail {
+        border: 2px solid;
+        border-radius: 8px;
+        border-color: coral;
+    }
+</style>
+
+
+
+<div class="row">
+
+    <div class="col-md-10 col-md-offset-1">
+        <h2>Fotoğraflarınız</h2>
+   
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+       
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.Label("Kategori Adı")
+            
+                </th>
+                <th>
+                    @Html.Label("Fotoğraf Adı")
+                </th>
+            
+                <th>
+                    @Html.Label("Beğenilme Sayısı")
+                </th>
+
+                <th>
+                    @Html.Label("Fotoğraf")
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                   
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LikeCount)
+                    </td>
+                    <td>
+                       <div class="thumbnail"><img src="@item.PhotoPath" />   </div>
+                    </td>
+                    <td>
+                        <a href="/Photo/Edit/@item.Id" class="btn btn-warning btn-sm" title="Düzenle"><span class="glyphicon glyphicon-edit"></span></a><hr />
+                        <a href="/Photo/Details/@item.Id" class="btn btn-info btn-sm" title="Detayına Git"><span class="glyphicon glyphicon-search"></span></a><hr />
+                        <a href="/Photo/Delete/@item.Id" class="btn btn-danger btn-sm" title="Sil"><span class="glyphicon glyphicon-trash"></span></a><hr />
+                        <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_comment" data-photo-id="@item.Id">
+                            <span class="glyphicon glyphicon-comment"></span> 
+                        </button>
+                       </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+</div>
+
+@Bootstrap.ModalPopup(id: "modal_comment", title: "Yorumlar")
+
+<script src="~/Scripts/CommentScript.js"></script>

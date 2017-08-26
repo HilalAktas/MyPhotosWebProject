@@ -1,0 +1,17 @@
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.BusinessLayer.dll.config
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.BusinessLayer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.BusinessLayer.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.Common.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.DataAccessLayer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.Entities.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotosCore.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.Common.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.DataAccessLayer.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.Entities.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotosCore.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\obj\Debug\MyPhotos.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\obj\Debug\MyPhotos.BusinessLayer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\obj\Debug\MyPhotos.BusinessLayer.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.Language.dll
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\MyPhotos.Language.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.BusinessLayer\bin\Debug\en\MyPhotos.Language.resources.dll

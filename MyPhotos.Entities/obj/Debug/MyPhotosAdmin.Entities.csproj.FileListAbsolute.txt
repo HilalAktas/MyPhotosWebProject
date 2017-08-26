@@ -1,0 +1,10 @@
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\MyPhotos.Entities.dll.config
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\MyPhotos.Entities.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\MyPhotos.Entities.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\EntityFramework.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\EntityFramework.xml
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\obj\Debug\MyPhotos.Entities.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\obj\Debug\MyPhotos.Entities.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.Entities\obj\Debug\MyPhotosAdmin.Entities.csprojResolveAssemblyReference.cache

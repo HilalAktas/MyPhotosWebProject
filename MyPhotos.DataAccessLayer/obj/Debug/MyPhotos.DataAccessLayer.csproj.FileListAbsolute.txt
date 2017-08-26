@@ -1,0 +1,16 @@
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.DataAccessLayer.dll.config
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.DataAccessLayer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.DataAccessLayer.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.Common.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.Entities.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotosCore.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.Common.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotos.Entities.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\MyPhotosCore.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\obj\Debug\MyPhotos.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\obj\Debug\MyPhotos.DataAccessLayer.dll
+C:\staj\MyPhotosSolutions\MyPhotos.DataAccessLayer\obj\Debug\MyPhotos.DataAccessLayer.pdb

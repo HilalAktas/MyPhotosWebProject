@@ -1,0 +1,68 @@
+﻿@using MyPhoto.WebApp.Models
+@using MyPhotos.Entities
+@model List<Comment>
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+@{ 
+    MyPhotosUser user = CurrentSession.User;
+
+}
+
+@foreach (Comment item in Model)
+{
+
+<div class="container">
+
+   
+    <div class="media">
+        <div class="media-left media-top">
+            <div class="media-object">
+                <span class="glyphicon glyphicon-comment"></span>
+            </div>
+        </div>
+   
+           <div class="media-body">
+         <!--contenteditable içeriği düzenleyebilmemizisağlar.-->
+            <span class="col-md-3" id="comment_text_@item.Id" contenteditable="false">
+                @item.Text
+        
+            <br />
+        </span>
+                <small class="col-md-2">
+                    <span class="glyphicon glyphicon-user">@item.Owner.UserName</span>
+                    <span class="glyphicon glyphicon-time">@item.ModifiedOn</span>
+                </small>
+            
+       
+           
+            @if (user == item.Owner)
+
+            { <span class="col-md-2 ">
+            <!--Data ile kendi attributelerimizi tanımlayabiliyoruz-->
+                 <button class="btn btn-warning btn-xs" data-edit-mode="false" onclick="doComment(this,'edit_click','@item.Id','#comment_text_@item.Id');"><span class="glyphicon glyphicon-edit"></span></button>
+                <button class="btn btn-danger btn-xs"data-edit-mode="false" onclick="doComment(this,'remove_click','@item.Id',null);"><span class="glyphicon glyphicon-trash"></span></button>
+
+            </span>
+            }
+          
+
+        </div>
+
+      
+    </div>
+
+</div>
+
+}
+<br />
+
+@if (user!=null)
+{
+<div class="input-group col-md-8">
+    <input type="text" id="new_text_comment" class="form-control">
+    <span class="input-group-btn">
+        <button class="btn btn-success" type="button" onclick="doComment(this, 'new_click', -1,null);">Gönder</button>
+    </span>
+</div>
+}

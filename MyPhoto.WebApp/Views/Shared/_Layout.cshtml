@@ -1,0 +1,151 @@
+﻿@using MyPhotos.Entities;
+@using MyPhotos.Language;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!-- Bootstrap Core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/1-col-portfolio.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+      <link href="~/Content/shop-homepage.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    @{ 
+       MyPhotosUser user = null;
+
+        if (Session["login"] != null)
+        {
+
+            user = Session["login"] as MyPhotosUser;
+        }
+
+
+
+    }
+    <!-- Navigation -->
+    <nav class="navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              
+                <a class="navbar-brand" href="/Home/Index">@MyPhotos.Language.Resource.AnaSayfa</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    
+                   
+                    <li>
+                        <a href="/Home/Last"><span class="glyphicon glyphicon-th-list"></span>&nbsp;@MyPhotos.Language.Resource.SonEklenenler</a>
+                    </li>
+                    <li>
+                        <a href="/Home/MostLiked"><span class="glyphicon glyphicon-heart">@MyPhotos.Language.Resource.EnBeğenilenler</span></a>
+                    </li>
+                    <li>
+                        <a href="/Home/About"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;@MyPhotos.Language.Resource.Hakkımızda</a>
+                    </li>
+                   
+
+                </ul>
+               
+                
+                 <ul class="nav navbar-nav navbar-right ">
+                  
+                     @{if (user == null)
+                         {
+                          <li><a href="/Home/Register"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;@MyPhotos.Language.Resource.ÜyeOl</a></li>
+
+                     <li><a href="/Home/Login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;@MyPhotos.Language.Resource.GirisYap</a></li>
+                     
+                     <li>@Html.ActionLink("Türkçe", "Change", "Lang", new { LanguageAbbrevation = "tr" }, null)</li>
+                     <li>@Html.ActionLink("English", "Change", "Lang", new { LanguageAbbrevation = "en" }, null)</li>
+                         }
+
+                         else
+                         {
+                        <li>
+                            <a href="/Home/ShowProfile"><span class="glyphicon glyphicon-wrench"></span>&nbsp;@MyPhotos.Language.Resource.Yonetim</a>
+                        </li>
+
+                          <li><a href="/Home/LogOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;@MyPhotos.Language.Resource.Cıkıs</a></li>
+                          
+                           <li><a href=""><span class="glyphicon glyphicon-user "> @user.UserName</span>
+
+                               </a></li>
+                           
+                         }
+
+                    }
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+        
+
+        @RenderBody()
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-4 text-center">
+               
+                       <h4><strong>My Photos</strong></h4><hr />
+                    
+                      <p>
+                          <a href="/Home/About"><span class="glyphicon glyphicon-info-sign"></span>@MyPhotos.Language.Resource.Hakkımızda</a><br />
+                          <a href="/Home/Last"><span class="glyphicon glyphicon-th-list"></span>@MyPhotos.Language.Resource.SonEklenenler</a><br />
+                    
+                      </p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <p> <h4><strong>My Photos </strong></h4> </p><hr />
+
+                </div>
+                <div class="col-md-4 text-center">
+
+            
+                    <p>
+                        <h4><strong>@MyPhotos.Language.Resource.EBülten</strong></h4>
+                        <hr />
+                        <div class="col-md-12 input-group ">
+                            <input type="text" class="form-control" placeholder=@MyPhotos.Language.Resource.Eposta>
+                           <span class="input-group-btn ">
+                             <button type="button" class="btn btn-primary"><span class="glphicon glyphicon-send"></span>@MyPhotos.Language.Resource.Gönder</button>
+                         </span>
+
+
+                        </div>
+                       
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+</body>
+</html>

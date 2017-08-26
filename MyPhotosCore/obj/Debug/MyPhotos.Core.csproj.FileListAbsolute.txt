@@ -1,0 +1,4 @@
+C:\staj\MyPhotosSolutions\MyPhotosCore\bin\Debug\MyPhotosCore.dll
+C:\staj\MyPhotosSolutions\MyPhotosCore\bin\Debug\MyPhotosCore.pdb
+C:\staj\MyPhotosSolutions\MyPhotosCore\obj\Debug\MyPhotosCore.dll
+C:\staj\MyPhotosSolutions\MyPhotosCore\obj\Debug\MyPhotosCore.pdb

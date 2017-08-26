@@ -1,0 +1,77 @@
+﻿
+@model MyPhotos.Entities.Photo
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />
+
+<div>
+    <h4>Fotoğrafı Silmek İstediğinizden emin misiniz?</h4>
+    <br />
+
+    <dl class="dl-horizontal">
+        <dt>
+            Fotoğraf
+        </dt>
+
+        <dd>
+            <div class="thumbnail col-md-4"><img src="@Model.PhotoPath" /></div>
+
+
+
+        </dd>
+        <hr />
+        <dt>
+            Başlık
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            Oluşturulma Tarihi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            Değiştirilme Tarihi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+
+        <dt>
+            Değiştiren Kullanıcı
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUser)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+      
+
+        <div class="form-actions  col-md-5 ">
+            <input type="submit" value="Sil" class="btn btn-success" /> |
+            @Html.ActionLink("Fotoğraflarınıza Geri Dönün", "Index")
+        </div>
+    }
+</div>
+
+<script>
+    $(function () {
+
+        $("footer").hide()
+    });
+
+</script>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdSınırlama" xml:space="preserve">
+    <value>The name field can not be shorter than 5 characters or longer than 20 characters.</value>
+  </data>
+  <data name="Adınız" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="AktifButon" xml:space="preserve">
+    <value>Activate Button</value>
+  </data>
+  <data name="AnaSayfa" xml:space="preserve">
+    <value>HomePage</value>
+  </data>
+  <data name="DoğumTarihiKontrol" xml:space="preserve">
+    <value>The date of birth field can not be blank.</value>
+  </data>
+  <data name="EBülten" xml:space="preserve">
+    <value>E-Newsletter Membership</value>
+  </data>
+  <data name="EmailFormat" xml:space="preserve">
+    <value>Please enter a value in email format.</value>
+  </data>
+  <data name="EmailSınırlama" xml:space="preserve">
+    <value>The Email field can not be shorter than 5 characters or longer than 35 characters.</value>
+  </data>
+  <data name="EnBeğenilenler" xml:space="preserve">
+    <value>Most Liked</value>
+  </data>
+  <data name="Eposta" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="GirisYap" xml:space="preserve">
+    <value>Sing In</value>
+  </data>
+  <data name="Gönder" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Hakkımızda" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="Hoşgeldin" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="Kategoriler" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Kayıt" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="KullanıcıAdınız" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="KullanıcıAdıSınırlama" xml:space="preserve">
+    <value>The Username field can not be shorter than 5 characters or longer than 20 characters.</value>
+  </data>
+  <data name="SonEklenenler" xml:space="preserve">
+    <value>The Newests</value>
+  </data>
+  <data name="Soyadınız" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="SoyadıSınırlama" xml:space="preserve">
+    <value>The surname field can not be shorter than 5 characters or longer than 20 characters.</value>
+  </data>
+  <data name="Yorumlar" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ÜyeOl" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Şifre" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ŞifreKontrol" xml:space="preserve">
+    <value>The password fields do not match.</value>
+  </data>
+  <data name="ŞifreSınırlama" xml:space="preserve">
+    <value>The password field can not be shorter than 5 characters or longer than 20 characters.</value>
+  </data>
+  <data name="ŞifreTekrar" xml:space="preserve">
+    <value>Password Again</value>
+  </data>
+  <data name="Böyle bir aktifleştirme kodu mevcut değil." xml:space="preserve">
+    <value>There is no such activation code.</value>
+  </data>
+  <data name="Cıkıs" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="EpostaKullanılıyor" xml:space="preserve">
+    <value>This e-mail  is being used by another user.</value>
+  </data>
+  <data name="KullanıcıAdıKullanılıyor" xml:space="preserve">
+    <value>This username is being used by another user.</value>
+  </data>
+  <data name="KullanıcıadıŞifreUyumsuz" xml:space="preserve">
+    <value>User Name and Password do not match.</value>
+  </data>
+  <data name="KullanıcıAktif" xml:space="preserve">
+    <value>User already activated.</value>
+  </data>
+  <data name="KullanıcıAktifDeğil" xml:space="preserve">
+    <value>User is not active.Please activate your account from your email address.</value>
+  </data>
+  <data name="KullanıcıBulunamıyor" xml:space="preserve">
+    <value>User not found.</value>
+  </data>
+  <data name="KullanıcıGüncellenemedi." xml:space="preserve">
+    <value>User could not be updated.</value>
+  </data>
+  <data name="KullanıcıSilinemedi" xml:space="preserve">
+    <value>User can not be deleted.</value>
+  </data>
+  <data name="Yonetim" xml:space="preserve">
+    <value>Account Management</value>
+  </data>
+</root>

@@ -1,0 +1,92 @@
+﻿@using MyPhotos.Entities;
+
+
+@{
+    ViewBag.Title = "ShowProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ @{ 
+
+     MyPhotosUser user = Session["login"] as MyPhotosUser;
+
+ }
+
+<h4><strong>Profiliniz</strong></h4>
+<hr />
+
+<div class="container">
+    <div class="row col-md-2">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Profil Düzenle
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="/Home/EditProfile">Profil Düzenle</a></li>
+                <li><a href="/Home/RemoveProfile">Profili Sil</a></li>
+
+            </ul>
+        </div>
+
+
+
+    </div>
+    <div class="thumbnail col-md-5">
+
+        <p><strong>Profil</strong></p>
+            <p>Kullanıcı Ad:@user.UserName<p>
+            <p>Ad:@user.Name</p>
+            <p>Soyad:@user.Surname</p>
+            <p>Doğum Tarihi:@user.DateofBirth</p>
+
+
+
+     
+
+    
+
+    </div>
+
+    <div class="col-md-5">
+       
+
+
+         <div class="list-group">
+            <a href="/Photo/Create" class="list-group-item "><span class="glyphicon glyphicon-plus">&nbsp;Fotoğraf Ekle</span></a>
+            <a href="/Photo/Index" class="list-group-item"><span class="glyphicon glyphicon-picture">&nbsp;Fotoğrafların</span></a>
+            <a href="/Photo/MyLikedPhotos" class="list-group-item"><span class="glyphicon glyphicon-heart">&nbsp;Beğendiklerin</span> </a>
+       
+
+
+            @if (user.IsAdmin)
+            {
+                <hr />
+        
+
+                <a href="/MyPhotosUsers/Index" class="list-group-item">Kullanıcılar</a>
+                <a href="" class="list-group-item">Kullanıcıları Düzenle</a>
+
+                <a href="/Categories/Create" class="list-group-item"><span class="glyphicon glyphicon-plus">&nbsp;Kategori Ekle</span></a>
+                <a href="/Categories/Index" class="list-group-item"><span class="glyphicon glyphicon-list">&nbsp;Kategorileri Görüntüle</span></a>
+            }
+
+
+        </div>
+
+        </div>
+    </div>
+
+
+<script>
+    $(function () {
+
+        $("footer").hide()
+    });
+
+</script>

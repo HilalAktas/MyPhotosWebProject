@@ -1,0 +1,67 @@
+﻿@using MyPhotos.Entities;
+@model Photo
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/StyleSheet.css" rel="stylesheet" />
+<h2>Fotoğraf Detay</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+        <dt>
+            Başlık
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+         Fotoğraf
+        </dt>
+
+        <dd>
+            <div class="thumbnail col-md-4">
+                <img src="@Model.PhotoPath" />
+            </div>
+        </dd>
+
+        <dt>
+            Oluşturan Kullanıcı
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            Değiştirilme Tarihi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+
+        <dt>
+            Değiştiren Kullanıcı
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUser)
+        </dd>
+
+    </dl>
+</div>
+
+<script>
+    $(function () {
+
+        $("footer").hide()
+    });
+
+</script>

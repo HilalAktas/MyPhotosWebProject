@@ -1,0 +1,77 @@
+﻿@model MyPhotos.Entities.Category
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div>
+    <h4>Kategoriyi Silmek İstediğinizden emin misiniz?</h4>
+    <br />
+  
+    <dl class="dl-horizontal">
+        <dt>
+            Fotoğraf
+        </dt>
+
+        <dd>
+           <div class="thumbnail col-md-4"><img src="@Model.CategoryPhoto" /></div>
+            
+            
+          
+        </dd>
+        <hr />
+        <dt>
+           Başlık
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+           Açıklama
+        </dt>
+
+        <dd>
+          @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+          Oluşturulma Tarihi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            Değiştirilme Tarihi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+
+        <dt>
+           Değiştiren Kullanıcı
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUser)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions  col-md-5 ">
+            <input type="submit" value="Sil" class="btn btn-success" /> |
+            @Html.ActionLink("Kategorilere Geri Dön", "Index")
+        </div>
+    }
+</div>

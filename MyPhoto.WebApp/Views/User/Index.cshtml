@@ -1,0 +1,82 @@
+﻿@using MyPhotos.Entities
+@model List<MyPhotosUser>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Kullanıcı Bilgi Tablosu</h2>
+<div class="right"><a href="/AdminHome/AdminPanel" class="btn btn-success">Admin Paneli</a></div>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            Kullanıcı Adı:
+        </th>
+        <th>
+            Ad
+        </th>
+
+        <th>
+           Soyad
+        </th>
+        <th>
+            Şifre
+        </th>
+        <th>
+            Adminlik
+        </th>
+        <th>
+       Aktiflik
+        </th>
+        <th>
+            Doğum Tarihi
+        </th>
+          <th>
+            Email
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAdmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateofBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a href="/User/Edit/@item.Id" class="btn btn-warning btn-sm" title="Düzenle"><span class="glyphicon glyphicon-edit"></span></a>
+                <a href="/User/Details/@item.Id" class="btn btn-info btn-sm" title="Detayına Git"><span class="glyphicon glyphicon-search"></span></a>
+                <a href="/User/Delete/@item.Id" class="btn btn-danger btn-sm" title="Sil"><span class="glyphicon glyphicon-trash"></span></a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+<br /><br />

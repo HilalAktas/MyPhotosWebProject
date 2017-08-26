@@ -1,0 +1,44 @@
+﻿
+<style>
+
+    .thumbnail{
+        
+          border: 2px dotted #a94442;
+                background-color: #d76663;
+                border-radius: 8px;
+                border-width: medium;
+                text-align:center;
+                
+
+    }
+
+</style>
+
+<div class="row">
+    
+
+        @{
+            Exception ex = null;
+
+            if (TempData["LastError"] != null)
+            {
+                ex = TempData["LastError"] as Exception;
+            }
+        }
+        <div class="thumbnail">
+            <p>
+                <span class="glyphicon glyphicon-remove"></span>
+             
+
+                   
+                    @if (ex != null)
+            {
+                        <span style="color:#fff">  @ex.Message</span>
+
+                    }
+               
+
+            </p>
+            </div>
+      
+</div>

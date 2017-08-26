@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Error</h2>
+
+<p>
+    <span class="glyphicon glyphicon-remove"></span>
+
+
+
+    @if (ex != null)
+            {
+        <span style="color:#fff">  @ex.Message</span>
+
+    }
+
+
+</p>

@@ -1,0 +1,10 @@
+C:\staj\MyPhotosSolutions\MyPhotos.Language\bin\Release\MyPhotos.Language.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Language\bin\Release\MyPhotos.Language.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.Language\bin\Release\en\MyPhotos.Language.resources.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\MyPhotos.Language.Resource.resources
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\MyPhotos.Language.Resource.en.resources
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\MyPhotos.Language.csproj.GenerateResource.Cache
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\en\MyPhotos.Language.resources.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\MyPhotos.Language.dll
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\MyPhotos.Language.pdb
+C:\staj\MyPhotosSolutions\MyPhotos.Language\obj\Release\MyPhotos.Language.csprojResolveAssemblyReference.cache

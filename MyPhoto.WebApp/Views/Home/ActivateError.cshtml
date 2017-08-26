@@ -1,0 +1,30 @@
+﻿@using MyPhotos.Entities;
+@model List<ErrorCodeObj>
+@{
+    ViewBag.Title = "Hesap Geçersiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="text-danger">
+
+
+<br />
+<hr />
+ 
+      
+        @foreach (var item in Model)
+        {
+            <div class="alert alert-danger">
+          <span class="glyphicon glyphicon-alert"></span>      <strong>Hata!</strong> @item.Message
+            </div>
+
+        }
+
+
+</div>
+
+

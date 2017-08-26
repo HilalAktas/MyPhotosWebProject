@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ActivateOK";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h2> Yönlendiriliyorsunuz</h2>
+
+<br />
+<hr />
+<div class="alert alert-success">
+ <span class="glyphicon glyphicon-ok-sign" ></span> <strong>Merhaba!  </strong>Hesabınızı başarı ile aktifleştirdiniz.Artık beğeni ve yorum yapmaya başlayabiliriniz...
+</div>
+
+
+<script>
+    $(function () {
+
+        setTimeout(function(){window.location=" /Home/Login"},6000)
+
+    })
+
+
+</script>
+
